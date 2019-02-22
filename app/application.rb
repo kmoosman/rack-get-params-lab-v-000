@@ -19,6 +19,7 @@ class Application
           resp.write "#{item}\n"
         end
       end
+    end
   elsif req.path.match(/add/)
        item = req.params["item"]
        if @@items.include?(item)
