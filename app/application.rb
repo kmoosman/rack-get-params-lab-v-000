@@ -19,7 +19,6 @@ class Application
       req.path.match(/search/)
       search_term = req.params["q"]
       resp.write handle_search(search_term)
-    else if
       resp.write "Path Not Found"
     end
 
